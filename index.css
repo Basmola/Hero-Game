@@ -1,67 +1,60 @@
-html , body{
-    height:100%;
-    margin: 0;
-    background-color: var(--main-color);
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
 
-body{
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-:root{
-    --btn-color:rgb(155, 0, 0);
-    --main-color:white;
-    --shadow-color:rgba(8, 6, 6, 0.604);
-    --text-color:black;
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 #score {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    font-size: 2em;
-    color: var(--text-color);
-    font-weight: 900;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 2em;
+  font-weight: 900;
 }
 
 #introduction {
-    width: 200px;
-    height: 150px;
-    position: absolute;
-    font-weight: 600;
-    font-size: 0.8em;
-    color: var(--text-color);
-    text-align: center;
-    transition: opacity 2s;
-}
-
-#perfect {
-    position: absolute;
-    opacity: 0;
-    transition: opacity 2s;
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  font-weight: 600;
+  font-size: 0.8em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  transition: opacity 2s;
 }
 
 #restart {
-    width: 150px;
-    height: 130px;
-    position: absolute;
-    border-radius: 25%;
-    color: var(--main-color);
-    background-color:var(--btn-color);
-    border: none;
-    font-weight: 700;
-    font-size: 1.4em;
-    display: none;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: red;
+  border: none;
+  font-weight: 700;
+  font-size: 1.2em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: none;
+  cursor: pointer;
 }
-#restart:hover{
-    box-shadow: 0 0 25px var(--shadow-color);
-    transform: scale(1.1);
+
+#perfect {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 2s;
 }
+
+
+
